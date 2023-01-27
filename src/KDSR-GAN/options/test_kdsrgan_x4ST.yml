@@ -1,0 +1,66 @@
+# general settings
+name: test_KDSRGANx4STplus_400k_B12G4
+model_type: KDSRGANSTModel
+scale: 4
+num_gpu: auto  # auto: can infer from your visible devices automatically. official: 4 GPUs
+manual_seed: 0
+
+# ----------------- options for synthesizing training data in RealESRGANModel ----------------- #
+
+# dataset and data loader settings
+datasets:
+  # Uncomment these for validation
+  val_1:
+    name: NTIRE2020-Track1
+    type: PairedImageDataset
+    dataroot_gt: /root/dataset/NTIRE2020-Track1/track1-valid-gt
+    dataroot_lq: /root/dataset/NTIRE2020-Track1/track1-valid-input
+    io_backend:
+      type: disk
+
+
+# network structures
+network_g:
+  type: BlindSR_ST
+  n_feats: 128
+  n_encoder_res: 6
+  scale: 4
+  n_sr_blocks: 42
+
+# network structures
+network_TA:
+  type: BlindSR_TA
+  n_feats: 128
+  n_encoder_res: 6
+  scale: 4
+  n_sr_blocks: 42
+
+network_d:
+  type: UNetDiscriminatorSN
+  num_in_ch: 3
+  num_feat: 64
+  skip_connection: True
+
+# path
+path:
+  # use the pre-trained Real-ESRNet model
+  pretrain_network_TA: experiments/KDSRT-rec.pth
+  pretrain_network_g: experiments/KDSRS-rec.pth
+  param_key_g: params_ema
+  strict_load_g: False
+  ignore_resume_networks: network_TA
+
+
+
+val:
+  save_img: True
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name
+      type: calculate_psnr
+      crop_border: 4
+      test_y_channel: true
+
+
+

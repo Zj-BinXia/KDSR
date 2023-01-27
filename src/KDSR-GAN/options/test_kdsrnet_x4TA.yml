@@ -1,0 +1,53 @@
+# general settings
+name: train_KDSRNetTAx4plus_1000k_B12G4
+model_type: KDSRNetTAModel
+scale: 4
+num_gpu: auto  # auto: can infer from your visible devices automatically. official: 4 GPUs
+manual_seed: 0
+
+# ----------------- options for synthesizing training data in RealESRNetModel ----------------- #
+gt_usm: True  # USM the ground-truth
+
+# dataset and data loader settings
+datasets:
+  # Uncomment these for validation
+  test_1:
+    name: NTIRE2020-Track1
+    type: PairedImageDataset
+    dataroot_gt: /root/dataset/NTIRE2020-Track1/track1-valid-gt
+    dataroot_lq: /root/dataset/NTIRE2020-Track1/track1-valid-input
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: BlindSR_TA
+  n_feats: 128
+  n_encoder_res: 6
+  scale: 4
+  n_sr_blocks: 42
+
+# path
+path:
+  pretrain_network_g: ./experiments/KDSRT-rec.pth
+  param_key_g: params_ema
+  strict_load_g: true
+
+# Uncomment these for validation
+# validation settings
+val:
+  save_img: True
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name
+      type: calculate_psnr
+      crop_border: 4
+      test_y_channel: true
+    
+    ssim:
+      type: calculate_ssim
+      crop_border: 4
+      test_y_channel: true
+
+

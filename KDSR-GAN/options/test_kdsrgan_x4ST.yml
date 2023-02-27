@@ -45,7 +45,7 @@ network_d:
 path:
   # use the pre-trained Real-ESRNet model
   pretrain_network_TA: experiments/KDSRT-rec.pth
-  pretrain_network_g: experiments/KDSRS-rec.pth
+  pretrain_network_g: experiments/KDSRS-GAN.pth
   param_key_g: params_ema
   strict_load_g: False
   ignore_resume_networks: network_TA

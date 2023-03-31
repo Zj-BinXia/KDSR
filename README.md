@@ -24,15 +24,13 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
     git clone git@github.com:Zj-BinXia/KDSR.git
     ```
 
-2. Train or test codes
-
-  If you want to train or test KDSR-GAN (ie, Real-world SR, trained with the same degradation model as Real-ESRGAN)
+2. If you want to train or test KDSR-GAN (ie, Real-world SR, trained with the same degradation model as Real-ESRGAN)
 
     ```bash
     cd KDSR-GAN
     ```
     
-  If you want to train or test KDSR-classic (ie, classic degradation models, trained with the isotropic Gaussian Blur or anisotropic Gaussian blur and noises)
+3. If you want to train or test KDSR-classic (ie, classic degradation models, trained with the isotropic Gaussian Blur or anisotropic Gaussian blur and noises)
 
     ```bash
     cd KDSR-classic

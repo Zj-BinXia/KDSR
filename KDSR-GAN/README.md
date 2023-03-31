@@ -63,9 +63,6 @@ Please download checkpoints from [Google Drive](https://drive.google.com/drive/f
   <img src="images/quan.jpg" width="90%">
 </p>
 
-<p align="center">
-  <img src="images/qual.jpg" width="90%">
-</p>
 
 ---
 

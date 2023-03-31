@@ -18,7 +18,7 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
 
 ## Dataset Preparation
 
-We use the same training datasets as Real-ESRGAN(https://github.com/xinntao/Real-ESRGAN) (DF2K+OST).
+We use the same training datasets as [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (DF2K+OST).
 
 ### Installation
 

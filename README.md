@@ -36,7 +36,7 @@ If you want to train or test KDSR-classic (ie, classic degradation models, train
     cd KDSR-classic
     ```
 
-More details please see the README in folder of KDSR-GAN and KDSR-classic 
+**More details please see the README in folder of KDSR-GAN and KDSR-classic** 
 
 ## BibTeX
 

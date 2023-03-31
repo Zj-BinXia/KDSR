@@ -39,6 +39,20 @@ sh main_iso_KDSRsMx4_stage3.sh
 sh main_iso_KDSRsMx4_stage4.sh 
 ```
 
+### Anisotropic Gaussian Kernels plus noise
+
+1. We train KDSRT ( using L1 loss)
+
+```bash
+sh main_anisonoise_KDSRsMx4_stage3.sh
+```
+
+2. we train KDSRS (using L1 loss and KD loss). **It is notable that modify the ''pre_train_TA'' and ''pre_train_ST'' of main_anisonoise_KDSRsMx4_stage4.sh  to the path of trained KDSRT-M checkpoint.** Then, we run
+
+```bash
+sh main_anisonoise_KDSRsMx4_stage4.sh
+```
+
 ---
 
 ## :european_castle: Model Zoo

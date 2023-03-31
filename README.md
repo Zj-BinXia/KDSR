@@ -40,11 +40,11 @@ If you want to train or test KDSR-classic (ie, classic degradation models, train
 
 ## BibTeX
 
-@article{xia2022knowledge,
+@InProceedings{xia2022knowledge,
   title={Knowledge Distillation based Degradation Estimation for Blind Super-Resolution},
   author={Xia, Bin and Zhang, Yulun and Wang, Yitong and Tian, Yapeng and Yang, Wenming and Timofte, Radu and Van Gool, Luc},
-  journal={arXiv preprint arXiv:2211.16928},
-  year={2022}
+  journal={ICLR},
+  year={2023}
 }
 
 ---

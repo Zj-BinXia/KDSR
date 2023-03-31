@@ -23,21 +23,20 @@ We use DF2K, which combines [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) (
 
 ---
 
-## Training (8 V100 GPUs)
+## Training (4 V100 GPUs)
 
 ### Isotropic Gaussian Kernels
 
-1. We train KDSRNet_T ( using L1 loss)
+1. We train KDSRT-M ( using L1 loss)
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 -m torch.distributed.launch --nproc_per_node=8 --master_port=3309 kdsrgan/train.py -opt options/train_kdsrnet_x4TA.yml --launcher pytorch 
+sh main_iso_KDSRsMx4_stage3.sh 
 ```
 
-2. we train KDSRNet_S (only using L1 loss and KD loss). **It is notable that modify the ''pretrain_network_TA'' and ''pretrain_network_g'' of options/train_kdsrnet_x4ST.yml to the path of trained KDSRNet_T checkpoint.** Then, we run
+2. we train KDSRS-M (using L1 loss and KD loss). **It is notable that modify the ''pre_train_TA'' and ''pre_train_ST'' of main_iso_KDSRsMx4_stage4.sh  to the path of trained KDSRT-M checkpoint.** Then, we run
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
-python3  -m torch.distributed.launch --nproc_per_node=8 --master_port=4349 kdsrgan/train.py -opt options/train_kdsrnet_x4ST.yml --launcher pytorch 
+sh main_iso_KDSRsMx4_stage4.sh 
 ```
 
 ---

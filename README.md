@@ -39,15 +39,14 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
 **More details please see the README in folder of KDSR-GAN and KDSR-classic** 
 
 ---
-
 ## BibTeX
 
-  @InProceedings{xia2022knowledge,
-    title={Knowledge Distillation based Degradation Estimation for Blind Super-Resolution},
-    author={Xia, Bin and Zhang, Yulun and Wang, Yitong and Tian, Yapeng and Yang, Wenming and Timofte, Radu and Van Gool, Luc},
-    journal={ICLR},
-    year={2023}
-  }
+    @InProceedings{xia2022knowledge,
+      title={Knowledge Distillation based Degradation Estimation for Blind Super-Resolution},
+      author={Xia, Bin and Zhang, Yulun and Wang, Yitong and Tian, Yapeng and Yang, Wenming and Timofte, Radu and Van Gool, Luc},
+      journal={ICLR},
+      year={2023}
+    }
 
 ## 📧 Contact
 

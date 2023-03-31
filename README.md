@@ -38,6 +38,8 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
 
 **More details please see the README in folder of KDSR-GAN and KDSR-classic** 
 
+---
+
 ## BibTeX
 
   @InProceedings{xia2022knowledge,
@@ -47,4 +49,7 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
     year={2023}
   }
 
----
+## 📧 Contact
+
+If you have any question, please email `eechongm@gmail.com`.
+

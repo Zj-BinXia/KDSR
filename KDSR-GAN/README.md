@@ -37,6 +37,13 @@ We first train KDSRNet_T (only using L1 loss)
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 -m torch.distributed.launch --nproc_per_node=8 --master_port=3309 kdsrgan/train.py -opt options/train_kdsrnet_x4TA.yml --launcher pytorch 
 ```
 
+Then, we train KDSRNet_S (only using L1 loss and KD loss). **It is notable that modify the ''pretrain_network_TA'' and ''pretrain_network_g'' of options/train_kdsrnet_x4ST.yml to the path of trained KDSRNet_T checkpoint.** Then, we run
+
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
+python3  -m torch.distributed.launch --nproc_per_node=8 --master_port=4349 kdsrgan/train.py -opt options/train_kdsrnet_x4ST.yml --launcher pytorch 
+```
+
 ## :european_castle: Model Zoo
 
 Please download checkpoints from [Google Drive](https://drive.google.com/drive/folders/1QlOz4F9Mtp9DFXoaHYbnMnRSonR9YFJA).

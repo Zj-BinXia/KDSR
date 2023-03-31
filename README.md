@@ -16,9 +16,6 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
 - Python >= 3.8 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
 - [PyTorch >= 1.10](https://pytorch.org/)
 
-## Dataset Preparation
-
-We use the same training datasets as [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (DF2K+OST).
 
 ### Installation
 

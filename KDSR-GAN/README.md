@@ -29,12 +29,12 @@ Install dependent packages
 
 ---
 
-## Training (4 V100 GPUs)
+## Training (8 V100 GPUs)
+
+We first train KDSRNet_T (only using L1 loss)
 
 ```bash
-python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 mmrealsr/train.py -opt options/MMRealSRNet_x4.yml --launcher pytorch --auto_resume
-
-python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 mmrealsr/train.py -opt options/MMRealSRGAN_x4.yml --launcher pytorch --auto_resume
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 -m torch.distributed.launch --nproc_per_node=8 --master_port=3309 kdsrgan/train.py -opt options/train_kdsrnet_x4TA.yml --launcher pytorch 
 ```
 
 ## :european_castle: Model Zoo

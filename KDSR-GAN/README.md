@@ -64,6 +64,11 @@ python3 -m torch.distributed.launch --nproc_per_node=8 --master_port=4397 kdsrga
 Please download checkpoints from [Google Drive](https://drive.google.com/drive/folders/1QlOz4F9Mtp9DFXoaHYbnMnRSonR9YFJA).
 
 ---
+## Testing
+```bash
+python3  kdsrgan/test.py -opt options/test_kdsrgan_x4ST.yml 
+```
+---
 ## Results
 <p align="center">
   <img src="images/quan.jpg" width="90%">

@@ -18,7 +18,7 @@ This is [Pretrained Models](https://drive.google.com/drive/folders/1QlOz4F9Mtp9D
 
 ### Installation
 
-  Install dependent packages
+Install dependent packages
 
       ```bash
       sh pip.sh

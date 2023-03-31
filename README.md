@@ -51,5 +51,5 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
 
 ## 📧 Contact
 
-If you have any question, please email `eechongm@gmail.com`.
+If you have any question, please email `zjbinxia@gmail.com`.
 

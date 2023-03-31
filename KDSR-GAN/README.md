@@ -62,6 +62,7 @@ Please download checkpoints from [Google Drive](https://drive.google.com/drive/f
 <p align="center">
   <img src="images/method.jpg" width="50%">
 </p>
+
 ---
 
 ## BibTeX

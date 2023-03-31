@@ -47,7 +47,7 @@ sh main_iso_KDSRsMx4_stage4.sh
 sh main_anisonoise_KDSRsMx4_stage3.sh
 ```
 
-2. we train KDSRS (using L1 loss and KD loss). **It is notable that modify the ''pre_train_TA'' and ''pre_train_ST'' of main_anisonoise_KDSRsMx4_stage4.sh  to the path of trained KDSRT-M checkpoint.** Then, we run
+2. we train KDSRS (using L1 loss and KD loss). **It is notable that modify the ''pre_train_TA'' and ''pre_train_ST'' of main_anisonoise_KDSRsMx4_stage4.sh  to the path of trained KDSRT checkpoint.** Then, we run
 
 ```bash
 sh main_anisonoise_KDSRsMx4_stage4.sh

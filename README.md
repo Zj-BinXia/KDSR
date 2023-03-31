@@ -24,17 +24,27 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
     git clone git@github.com:Zj-BinXia/KDSR.git
     ```
 
-2. Install dependent packages
+2. Train or test codes
 
+If you want to train or test KDSR-GAN (ie, Real-world SR, trained with the same degradation model as Real-ESRGAN)
     ```bash
-    # Install basicsr - https://github.com/xinntao/BasicSR
-    # We use BasicSR for both training and inference
-    pip install basicsr
-    # facexlib and gfpgan are for face enhancement
-    pip install facexlib
-    pip install gfpgan
-    pip install -r requirements.txt
-    python setup.py develop
+    cd KDSR-GAN
     ```
+    
+If you want to train or test KDSR-classic (ie, classic degradation models, trained with the isotropic Gaussian Blur or anisotropic Gaussian blur and noises)
+    ```bash
+    cd KDSR-classic
+    ```
+
+More details please see the README in folder of KDSR-GAN and KDSR-classic 
+
+## BibTeX
+
+@article{xia2022knowledge,
+  title={Knowledge Distillation based Degradation Estimation for Blind Super-Resolution},
+  author={Xia, Bin and Zhang, Yulun and Wang, Yitong and Tian, Yapeng and Yang, Wenming and Timofte, Radu and Van Gool, Luc},
+  journal={arXiv preprint arXiv:2211.16928},
+  year={2022}
+}
 
 ---

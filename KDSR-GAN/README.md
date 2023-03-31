@@ -6,7 +6,7 @@ This project is the official implementation of 'Knowledge Distillation based Deg
 This is [Pretrained Models](https://drive.google.com/drive/folders/1QlOz4F9Mtp9DFXoaHYbnMnRSonR9YFJA) for KDSR-GAN (for Real-world SR)
 
 <p align="center">
-  <img src="images/method.jpg" width="80%">
+  <img src="images/method.jpg" width="60%">
 </p>
 
 ---

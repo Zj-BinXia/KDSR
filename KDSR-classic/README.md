@@ -60,6 +60,23 @@ sh main_anisonoise_KDSRsMx4_stage4.sh
 Please download checkpoints from [Google Drive](https://drive.google.com/drive/folders/113NBvfcrCedvend96KqDiRYVy3N8yprl).
 
 ---
+
+## Testing
+
+### Isotropic Gaussian Kernels
+
+```bash
+sh test_iso_KDSRsMx4.sh
+```
+or
+
+```bash
+sh test_iso_KDSRsLx4.sh
+```
+### Anisotropic Gaussian Kernels plus noise
+
+---
+
 ## Results
 <p align="center">
   <img src="images/iso-quan.jpg" width="90%">

@@ -62,7 +62,11 @@ Please download checkpoints from [Google Drive](https://drive.google.com/drive/f
 ---
 ## Results
 <p align="center">
-  <img src="images/quan.jpg" width="90%">
+  <img src="images/iso-quan.jpg" width="90%">
+</p>
+
+<p align="center">
+  <img src="images/aniso-quan.jpg" width="90%">
 </p>
 
 

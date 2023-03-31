@@ -29,6 +29,12 @@ Install dependent packages
 
 ---
 
+## Dataset Preparation
+
+We use the same training datasets as [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (DF2K+OST).
+
+---
+
 ## Training (8 V100 GPUs)
 
 1. We train KDSRNet_T (only using L1 loss)

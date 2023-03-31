@@ -38,15 +38,19 @@ python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 mmreals
 
 Please download checkpoints from [Google Drive](https://drive.google.com/file/d/10EyZR0SBEXkZIag9rcSgYBupBGllcwdA/view?usp=sharing) or [Github Release](https://github.com/TencentARC/MM-RealSR/releases).
 
+---
 ## BibTeX
 
-@article{xia2022knowledge,
-  title={Knowledge Distillation based Degradation Estimation for Blind Super-Resolution},
-  author={Xia, Bin and Zhang, Yulun and Wang, Yitong and Tian, Yapeng and Yang, Wenming and Timofte, Radu and Van Gool, Luc},
-  journal={arXiv preprint arXiv:2211.16928},
-  year={2022}
-}
+    @InProceedings{xia2022knowledge,
+      title={Knowledge Distillation based Degradation Estimation for Blind Super-Resolution},
+      author={Xia, Bin and Zhang, Yulun and Wang, Yitong and Tian, Yapeng and Yang, Wenming and Timofte, Radu and Van Gool, Luc},
+      journal={ICLR},
+      year={2023}
+    }
 
----
+## 📧 Contact
+
+If you have any question, please email `zjbinxia@gmail.com`.
+
 
 

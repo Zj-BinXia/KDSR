@@ -17,28 +17,17 @@ This is code for KDSR-class (for classic degradation model, ie y=kx+n)
 - Python >= 3.8 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
 - [PyTorch >= 1.10](https://pytorch.org/)
 
-### Installation
-
-Install dependent packages
-
-
-    pip install basicsr 
-    pip install -r requirements.txt
-    pip install pandas 
-    sudo python3 setup.py develop
-
-
----
-
 ## Dataset Preparation
 
-We use the same training datasets as [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (DF2K+OST).
+We use DF2K, which combines [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) (800 images) and [Flickr2K](https://github.com/LimBee/NTIRE2017) (2650 images).
 
 ---
 
 ## Training (8 V100 GPUs)
 
-1. We train KDSRNet_T (only using L1 loss)
+### Isotropic Gaussian Kernels
+
+1. We train KDSRNet_T ( using L1 loss)
 
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 -m torch.distributed.launch --nproc_per_node=8 --master_port=3309 kdsrgan/train.py -opt options/train_kdsrnet_x4TA.yml --launcher pytorch 
@@ -49,13 +38,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 -m torch.distributed.launch --nproc
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 python3  -m torch.distributed.launch --nproc_per_node=8 --master_port=4349 kdsrgan/train.py -opt options/train_kdsrnet_x4ST.yml --launcher pytorch 
-```
-
-3. we train KDSRGAN_S ( using L1 loss, perceptual loss, adversial loss and KD loss). **It is notable that modify the ''pretrain_network_TA'' and ''pretrain_network_g'' of options/train_kdsrnet_x4ST.yml to the path of trained KDSRNet_T and KDSRNet_S checkpoint, respectively.** Then, we run
-
-```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
-python3 -m torch.distributed.launch --nproc_per_node=8 --master_port=4397 kdsrgan/train.py -opt options/train_kdsrgan_x4ST.yml --launcher pytorch 
 ```
 
 ---

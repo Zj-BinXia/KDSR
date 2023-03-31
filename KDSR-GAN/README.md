@@ -60,7 +60,11 @@ Please download checkpoints from [Google Drive](https://drive.google.com/drive/f
 ---
 ## Results
 <p align="center">
-  <img src="images/method.jpg" width="50%">
+  <img src="images/quan.jpg" width="90%">
+</p>
+
+<p align="center">
+  <img src="images/qual.jpg" width="90%">
 </p>
 
 ---

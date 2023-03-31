@@ -20,8 +20,11 @@ This is [Pretrained Models](https://drive.google.com/drive/folders/1QlOz4F9Mtp9D
 
 Install dependent packages
 
-      ```bash
-      sh pip.sh
+    ```bash
+    pip install basicsr 
+    pip install -r requirements.txt
+    pip install pandas 
+    sudo python3 setup.py develop
       ```
 
 ---

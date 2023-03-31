@@ -65,15 +65,20 @@ Please download checkpoints from [Google Drive](https://drive.google.com/drive/f
 
 ### Isotropic Gaussian Kernels
 
+Test KDSRsM
 ```bash
 sh test_iso_KDSRsMx4.sh
 ```
-or
+Test KDSRsL
 
 ```bash
 sh test_iso_KDSRsLx4.sh
 ```
 ### Anisotropic Gaussian Kernels plus noise
+
+```bash
+sh test_anisonoise_KDSRsMx4.sh
+```
 
 ---
 

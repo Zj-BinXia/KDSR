@@ -127,8 +127,8 @@ if __name__ == '__main__':
 
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
     parser = argparse.ArgumentParser()
-    parser.add_argument('--folder_gt', type=str, default='/root/results/NTIRE2020-Track1')
-    parser.add_argument('--folder_restored', type=str, default='/root/datasets/NTIRE2020-Track1/track1-valid-gt')
+    parser.add_argument('--folder_gt', type=str, default='/root/datasets/NTIRE2020-Track1/track1-valid-gt')
+    parser.add_argument('--folder_restored', type=str, default='/root/results/NTIRE2020-Track1')
     args = parser.parse_args()
     img_list = sorted(glob.glob(osp.join(args.folder_gt, '*.png')))
     lr_list = sorted(glob.glob(osp.join(args.folder_restored, '*.png')))

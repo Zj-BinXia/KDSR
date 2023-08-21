@@ -12,8 +12,8 @@ from basicsr.metrics import calculate_psnr, calculate_ssim
 def main():
     # Configurations
     parser = argparse.ArgumentParser()
-    parser.add_argument('--folder_gt', type=str, default='/root/results/NTIRE2020-Track1')
-    parser.add_argument('--folder_restored', type=str, default='/root/datasets/NTIRE2020-Track1/track1-valid-gt')
+    parser.add_argument('--folder_gt', type=str, default='/root/datasets/NTIRE2020-Track1/track1-valid-gt')
+    parser.add_argument('--folder_restored', type=str, default='/root/results/NTIRE2020-Track1')
     args = parser.parse_args()
     psnr_all = []
     ssim_all = []

@@ -68,6 +68,12 @@ Please download checkpoints from [Google Drive](https://drive.google.com/drive/f
 ```bash
 python3  kdsrgan/test.py -opt options/test_kdsrgan_x4ST.yml 
 ```
+
+calculate metric
+```bash
+python3  kdsrgan/test.py -opt options/test_kdsrgan_x4ST.yml 
+```
+
 ---
 ## Results
 <p align="center">

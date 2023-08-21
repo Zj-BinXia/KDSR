@@ -72,9 +72,10 @@ python3  kdsrgan/test.py -opt options/test_kdsrgan_x4ST.yml
 calculate metric
 ```bash
 python3  Metric/PSNR.py --folder_gt PathtoGT  --folder_restored PathtoSR
+```
 
+```bash
 python3  Metric/LPIPS.py --folder_gt PathtoGT  --folder_restored PathtoSR
-
 ```
 
 ---

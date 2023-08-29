@@ -10,6 +10,7 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
 </p>
 
 - **August 28, 2023:** For real-world SR tasks, we released a [KDSR-GANV2] that is more focused on perception rather than the distortion， which can be used to super-resolve AIGC generated images.
+  
 | \multirow{2}[2]{*}{Methods} | \multirow{2}[2]{*}{Parms (M)} | \multirow{2}[2]{*}{FLOPs(G)} | \multirow{2}[2]{*}{Runtime (ms)} | \multicolumn{3}{c|}{AIM2019} | \multicolumn{3}{c}{NTIRE2020} |
 |-----------------------------|-------------------------------|------------------------------|----------------------------------|------------------------------|-------------------------------|
 |                             |                               |                              |                                  | LPIPS$\downarrow$            | PSNR$\uparrow$                | SSIM$\uparrow$  | LPIPS$\downarrow$ | PSNR$\uparrow$ | SSIM$\uparrow$  |
@@ -19,6 +20,7 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
 | Real-ESRGAN                 | 16.69                         | 871.25                       | 236.04                           | 0.3956                       | 23.89                         | 0.6892          | 0.3471            | 26.40          | 0.7431          |
 | MM-RealSR                   | 26.13                         | 930.54                       | 290.64                           | 0.3948                       | 23.45                         | 0.6889          | 0.3446            | 25.19          | 0.7404          |
 | KDSR$_{s}$-GAN (Ours)       | 18.85                         | 640.84                       | 154.62                           | \textbf{0.3758}              | \textbf{24.22}                | \textbf{0.7038} | \textbf{0.3198}   | \textbf{27.12} | \textbf{0.7614} |
+
 - **Jan 28, 2023:** Training&Testing codes and pre-trained models are released!
 
 ---

@@ -87,7 +87,7 @@ python3  Metric/LPIPS.py --folder_gt PathtoGT  --folder_restored PathtoSR
 ---
 ## Results
 <p align="center">
-  <img src="images/quan.jpg" width="90%">
+  <img src="images/results.jpg" width="90%">
 </p>
 
 

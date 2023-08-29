@@ -9,6 +9,9 @@ We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5d
   <img src="images/method.jpg" width="50%">
 </p>
 
+- **August 28, 2023:** For real-world SR tasks, we released a [KDSR-GANV2] that is more focused on perception rather than the distortion， which can be used to super-resolve AIGC generated images. 
+- **Jan 28, 2023:** Training&Testing codes and pre-trained models are released!
+
 ---
 
 ##  Dependencies and Installation

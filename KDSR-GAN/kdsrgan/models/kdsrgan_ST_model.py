@@ -242,8 +242,18 @@ class KDSRGANSTModel(SRGANModel):
         lr = self.lr_sr * (self.gamma_sr ** ((current_iter ) // self.lr_decay_sr))
         for param_group in self.optimizer_g.param_groups:
             param_group['lr'] = lr 
+
+        l1_gt = self.gt_usm
+        percep_gt = self.gt_usm
+        gan_gt = self.gt_usm
+        if self.opt['l1_gt_usm'] is False:
+            l1_gt = self.gt
+        if self.opt['percep_gt_usm'] is False:
+            percep_gt = self.gt
+        if self.opt['gan_gt_usm'] is False:
+            gan_gt = self.gt
         
-        hr2 = self.pixel_unshuffle(self.gt)
+        hr2 = self.pixel_unshuffle(l1_gt)
         _, T_fea = self.model_Eta(torch.cat([self.lq,hr2],dim=1))
 
         # optimize net_g

@@ -15,7 +15,7 @@
 
 
 <p align="center">
-  <img src="images/method.jpg" width="70%">
+  <img src="images/method.jpg" width="80%">
 </p>
 
 

@@ -17,7 +17,6 @@
   <img src="images/method.jpg" width="70%">
 </p>
 
-#### News
 
 We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5dNIBaCSu7oB9w9d1SPf1pm8c?usp=sharing) for KDSR-classic (for classic degradation models) and KDSR-GAN (for Real-world SR)
 

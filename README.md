@@ -1,7 +1,16 @@
-# KDSR
+# Knowledge Distillation based Degradation Estimation for Blind Super-Resolution （ICLR2023）
 
-This project is the official implementation of 'Knowledge Distillation based Degradation Estimation for Blind Super-Resolution', ICLR2023
 > **Knowledge Distillation based Degradation Estimation for Blind Super-Resolution [[Paper](https://arxiv.org/pdf/2211.16928.pdf)] [[Project](https://github.com/Zj-BinXia/KDSR)]**
+
+#### News
+
+- **August 28, 2023:** For real-world SR tasks, we released a pretrained model [KDSR-GANV2](https://drive.google.com/file/d/1plvMt7VrOY9YLbWrpchOzi6t1wcqkzBl/view?usp=sharing) and [training files](KDSR-GAN/options/train_kdsrgan_x4STV2.yml) that is more focused on perception rather than distortion.
+  
+<p align="center">
+  <img src="images/results.jpg" width="90%">
+</p>
+
+- **Jan 28, 2023:** Training&Testing codes and pre-trained models are released!
 
 We provide [Pretrained Models](https://drive.google.com/drive/folders/1_LyZDLu5dNIBaCSu7oB9w9d1SPf1pm8c?usp=sharing) for KDSR-classic (for classic degradation models) and KDSR-GAN (for Real-world SR)
 

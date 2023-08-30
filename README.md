@@ -7,9 +7,7 @@
 
 - **August 28, 2023:** For real-world SR tasks, we released a pretrained model [KDSR-GANV2](https://drive.google.com/file/d/1plvMt7VrOY9YLbWrpchOzi6t1wcqkzBl/view?usp=sharing) and [training files](KDSR-GAN/options/train_kdsrgan_x4STV2.yml) that is more focused on perception rather than distortion.
   
-<p align="center">
-  <img src="images/results.jpg" width="90%">
-</p>
+
 
 - **Jan 28, 2023:** Training&Testing codes and pre-trained models are released!
 

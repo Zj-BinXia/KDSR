@@ -71,6 +71,8 @@ Please download checkpoints from [Google Drive](https://drive.google.com/drive/f
 
 ---
 ## Testing
+You can download NTIRE2020 Track1 and NTIRE2020 Track2 and AIM2019 Track2 from [official link](https://competitions.codalab.org/competitions/22220) or [Google Drive](https://drive.google.com/drive/folders/1P5x8wuty3IVj7aKoDe6uZy9pA19S9rrQ?usp=sharing).
+
 ```bash
 python3  kdsrgan/test.py -opt options/test_kdsrgan_x4ST.yml 
 ```
